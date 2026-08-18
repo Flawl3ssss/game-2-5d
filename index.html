@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <title>Складка за складкой</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+    <section id="menu" class="screen active">
+      <div class="book-mark">ЛИСТ 01</div>
+      <div class="menu-art"><div class="sun"></div><div class="cloud cloud-a"></div><div class="cloud cloud-b"></div><div class="hero mascot"><span class="antenna"></span><span class="eye"></span><span class="eye right"></span><span class="badge">✦</span></div></div>
+      <p class="eyebrow">ЖИВАЯ КНИГА</p><h1>Складка<br>за складкой</h1>
+      <p class="lead">Помоги Пиксу собрать искры сюжета и расправить страницы.</p>
+      <button id="playBtn" class="primary"><span>▶</span> Начать забег</button>
+      <div class="best-line">Лучший забег: <strong id="menuBest">0</strong> искр</div>
+    </section>
+    <section id="game" class="screen">
+      <header class="hud"><div class="hud-item"><span class="heart">♥</span><strong id="lives">3</strong></div><div class="page">СТРАНИЦА <strong id="room">1/5</strong></div><div class="spark-counter">✦ <strong id="score">0</strong></div></header>
+      <canvas id="gameCanvas"></canvas>
+      <div class="tip">Свайпай влево и вправо</div>
+      <div class="controls"><button data-lane="0">←</button><button data-lane="1">●</button><button data-lane="2">→</button></div>
+    </section>
+    <section id="result" class="screen result-screen"><div class="result-art"><div class="hero mascot small"><span class="antenna"></span><span class="eye"></span><span class="eye right"></span><span class="badge">✦</span></div></div><p class="eyebrow">СТРАНИЦА РАСПРАВЛЕНА</p><h2>Отличный<br>маршрут!</h2><div class="result-score">✦ <strong id="finalScore">0</strong> искр</div><button id="againBtn" class="primary"><span>↻</span> Ещё один забег</button><div class="best-line">Рекорд: <strong id="resultBest">0</strong> искр</div></section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
